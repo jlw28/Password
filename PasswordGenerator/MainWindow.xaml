@@ -9,10 +9,17 @@
         Title="Password Generator" Height="495" Width="510">
     <Grid>
         <Label x:Name="lbl_Title" Content="Password Generator" HorizontalAlignment="Center" Margin="130,34,124.8,0" VerticalAlignment="Top" Width="246" FontSize="24" FontFamily="Arial Unicode MS" FontWeight="Bold"/>
+        <Label x:Name="lbl_Length" Content="Minimum Length: " HorizontalAlignment="Left" Margin="92,121,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial Unicode MS"/>
+        <Label x:Name="lbl_Chara" Content="Special Characters: " HorizontalAlignment="Left" Margin="92,170,0,0" VerticalAlignment="Top" FontFamily="Arial Unicode MS" FontSize="18"/>
+        <Label x:Name="lbl_Numbers" Content="Numbers: " HorizontalAlignment="Left" Margin="92,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.402,3.254" FontFamily="Arial Unicode MS" FontSize="18"/>
+        <Controls:NumericUpDown x:Name="count_Length" Minimum="6" Maximum="200" HorizontalAlignment="Left" Margin="340,121,0,0" VerticalAlignment="Top" Width="120" TrackMouseWheelWhenMouseOver="True" FontSize="18" FontFamily="Arial Unicode MS" Value="6"/>
+        <Controls:NumericUpDown x:Name="count_Chara" Minimum="0" Maximum="200" HorizontalAlignment="Left" Margin="340,170,0,0" VerticalAlignment="Top" Width="120" FontFamily="Arial Unicode MS" FontSize="18" TrackMouseWheelWhenMouseOver="True" Value="0"/>
+        <Controls:NumericUpDown x:Name="count_Numbers" Minimum="0" Maximum="200" HorizontalAlignment="Left" Margin="340,215,0,0" VerticalAlignment="Top" Width="120" TrackMouseWheelWhenMouseOver="True" FontSize="18" FontFamily="Arial Unicode MS" Value="-1"/>
+
         <Button x:Name="btn_Generate" Content="Generate" HorizontalAlignment="Center" Margin="188,262,192,0" VerticalAlignment="Top" Width="124" FontSize="16" FontFamily="Arial" FontWeight="Bold"/>
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="136" Margin="12,317,0,0" VerticalAlignment="Top" Width="480"/>
-
-
+        <TextBlock x:Name="tb_Answer" HorizontalAlignment="Left" Margin="26,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Width="454" FontFamily="Arial Unicode MS" FontSize="18"/>
+       
     </Grid>
 </Controls:MetroWindow>
